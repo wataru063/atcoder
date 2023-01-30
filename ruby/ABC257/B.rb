@@ -1,4 +1,4 @@
-n, k, q = gets.split.map(&:to_i)
+n, _, q = gets.chomp.split.map(&:to_i)
 as = gets.chomp.split.map(&:to_i)
 ls = gets.chomp.split.map(&:to_i)
 
@@ -8,5 +8,3 @@ q.times do |num|
   as[target] = as[target] + 1
 end
 puts as.join(" ")
-
-
